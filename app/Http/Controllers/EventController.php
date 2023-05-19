@@ -2,16 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\event;
+use App\Http\Requests\StoreeventRequest;
+use App\Http\Requests\UpdateeventRequest;
 
-class calenderController extends Controller
+class EventController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('calender.index');
+        //
     }
 
     /**
@@ -25,7 +27,7 @@ class calenderController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreeventRequest $request)
     {
         //
     }
@@ -33,7 +35,7 @@ class calenderController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(event $event)
     {
         //
     }
@@ -41,7 +43,7 @@ class calenderController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(event $event)
     {
         //
     }
@@ -49,7 +51,7 @@ class calenderController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(UpdateeventRequest $request, event $event)
     {
         //
     }
@@ -57,7 +59,7 @@ class calenderController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(event $event)
     {
         //
     }
