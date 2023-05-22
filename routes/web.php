@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\calenderController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\userController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,5 @@ Route::get('/', function () {
 Route::resource('/calender', calenderController::class);
 
 Route::get('/login', [userController::class,'index']);
+Route::get('/events', [EventController::class,'index']);
+Route::get('/events/list', [EventController::class,'listEvent'])->name('events.list');

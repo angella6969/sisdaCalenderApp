@@ -1,4 +1,6 @@
 @extends('layout.main')
 @section('container')
-    <div id='calendar'></div>
+    <div class="responsive">
+        <div id='calendar'></div>
+    </div>
 @endsection
