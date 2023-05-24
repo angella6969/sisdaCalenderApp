@@ -12,6 +12,7 @@
     },
     "dependencies": {
         "@fullcalendar/core": "^6.1.7",
+        "toastr": "^2.1.4",
         "vue": "^3.3.4"
     }
 }

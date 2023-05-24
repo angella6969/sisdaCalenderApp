@@ -22,5 +22,7 @@ Route::get('/', function () {
 Route::resource('/calender', calenderController::class);
 
 Route::get('/login', [userController::class,'index']);
+Route::post('/login', [userController::class,'authenticate']);
+
 Route::get('/events', [EventController::class,'index']);
 Route::get('/events/list', [EventController::class,'listEvent'])->name('events.list');

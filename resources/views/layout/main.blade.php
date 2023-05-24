@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    @include('layout.sidebar1')
-    @include('layout.navbar1')
+    @include('layout.sidebar')
+    @include('layout.navbar')
     <div class="content-wrapper">
         <div class="container">
             <div class="row ">
